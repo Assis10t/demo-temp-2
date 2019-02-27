@@ -25,28 +25,39 @@
 	\cellcolor{blue!25}\large
 	\textbf{What were your goals?}
 	\\ \hline
-	\vtop to 80mm{
+	\vtop to 130mm{
 \begin{itemize}
-    \item B.O.B Hardware and Software
+    \item B.O.B Hardware
     \begin{itemize}
-         \item B.O.B claw, lift mechanism and arena built. 
-        \item B.O.B can re-correct direction of motion then off path. Can move sideways and reverse.
-        \item B.O.B able to take orders from server. Can bring item to a bagging station, able to know when done so can get next item.
+         \item Build B.O.B prototype grabber. 
+         \item Build arena/shop construction. 
+         \item Stretch goal: Build and test the lifting mechanism.
+         \item Stretch goal: Build B.O.B prototype basket.
+    \end{itemize}
+    \item B.O.B Software
+    \begin{itemize} 
+        \item Reverse/Backwards movement.
+        \item Implement B.O.B taking orders from server. Follows path given by server; takes items to bagging station.
+        \item Stretch goal: Correct direction of travel when not on line.
+        \item Stretch goal: Sideways movement across multiple aisles. 
     \end{itemize}
     \item Server: 
     \begin{itemize}
-        \item Database fully implemented (includes maintenance). Interacts with App, B.O.B and website.
-        \item Does path-finding for B.O.B
+        \item Database fully implemented (includes updating and maintenance). 
+        \item Implement Path-finding for B.O.B.
     \end{itemize}
     \item App:
     \begin{itemize}
-        \item 
+        \item Main functionality present (Customer Login/Registration, Viewing Warehouses and items, Placing Orders).
+        \item Adopt new features on the Server.
+        \item More realistic User Interface.
     \end{itemize}
     \item Website: 
     \begin{itemize}
-        \item Managing of warehouses and items.
-        \item Front-end authentication of website. 
-        \item B.O.B has Logo. 
+        \item Managing of Warehouses and Items functionality.
+        \item Creating Front-end authentication of website. 
+        \item Defining Website structure.
+        \item B.O.B has Logo. \textbf{NEED TO CONFIRM}
     \end{itemize}
 \end{itemize}
   }
@@ -63,7 +74,7 @@
 	\cellcolor{blue!25}\large
 	\textbf{Summarise how your group organised the workload to achieve your goals.}
 	\\ \hline
-	\vtop to 75mm{
+	\vtop to 80mm{
 	\begin{itemize}
 	    \item Team Split
 	    \begin{itemize}
@@ -73,18 +84,19 @@
 	    \end{itemize}
 	    \item Robot Hardware
 	    \begin{itemize}
-	        \item Jacob, Anna built B.O.B's arena
-	        \item Jacob built lift mechanism and Anna built claw.
+	        \item Jacob, Anna built B.O.B's arena.
+	        \item Anna built B.O.B's claw and basket.
+	        \item Jacob built lift mechanism.
 	    \end{itemize}
 	    \item Robot Software
 	    \begin{itemize}
-	        \item Claire, Alex, Anna, improved B.O.B's path following.
+	        \item Claire and Alex worked on B.O.B movement. Anna assisted. 
 	    \end{itemize}
 	    \item Server, Website and App 
 	    \begin{itemize}
-	        \item Freddie, Oktay and Kieran implemented the server.
-	        \item Oktay implemented the App.
-	        \item Harry and Oktay implemented the website.
+	        \item Freddie and Kieran improved the server.
+	        \item Oktay improved the App.
+	        \item Harry improved the Website.
 	    \end{itemize}
 	\end{itemize}
   }
@@ -100,12 +112,12 @@
 	\cellcolor{blue!25}\large
 	\textbf{What were your main achievements?}
 	\\ \hline
-	\vtop to 25mm{
+	\vtop to 30mm{
 	\begin{itemize}
-	    \item B.O.B moves sideways.
-	    \item B.O.B knows where items are; can follow a sequence of directions to retrieve items.
-	    \item B.O.B can correct direction of travel when off line.
-	    \item 
+	    \item Customers can place orders via App and Website. \textbf{NEED TO CONFIRM}
+	    \item Stretch goal: B.O.B lifting mechanism built and tested.
+	    \item B.O.B takes orders from server (follows path to take items to bagging station).
+	    \item Stretch goals: B.O.B can correct direction of travel when not on line. Sideways movement across multiple aisles.
 	\end{itemize}
   }
   \\
@@ -120,10 +132,9 @@
 	\cellcolor{blue!25}\large
 	\textbf{What did you not achieve? Briefly explain why.}
 	\\ \hline
-	\vtop to 25mm{
+	\vtop to 10mm{
 	\begin{itemize}
-	    \item 
-	    \item 
+	    \item User QR code not generated. Prioritised lifting mechanism due to concerns addressed in first demo via Experts.
 	\end{itemize}
   }
   \\
@@ -138,10 +149,11 @@
 	\cellcolor{blue!25}\large
 	\textbf{Say briefly what changes you will make to your plan for the next demo.}
 	\\ \hline
-	\vtop to 30mm{
+	\vtop to 20mm{
 	\begin{itemize}
-	    \item 
-	    \item 
+	    \item User QR Code Generation.
+	    \item Construct shelves.
+	    \item Stabilise/Improve B.O.B sideways movement.
 	\end{itemize}
   }
   \\
@@ -157,6 +169,88 @@
   \\
   \hline
 \end{tabular}
+
+\begin{figure}[!htb]
+\minipage{0.45\textwidth}
+  \includegraphics[width=\linewidth]{stay_on_line.png}
+  \caption{Difference of sensor readings with regards to motor speed.}\label{fig:awesome_image1}
+\endminipage\hfill
+    \minipage{0.55\textwidth}
+     \includegraphics[width=\textwidth]{time_range_of_motion.pdf}
+     \caption{Affect of varied weights when covering 1 meter}\label{fig:awesome_image2}
+\endminipage
+\newline
+\end{figure}
+
+\begin{table}[!htb]
+\centering
+\begin{tabular}{| p{2cm} | p{2cm} | p{2cm} | p{2cm} |}
+\hline
+\textbf{Item} & \textbf{Cost Per Unit} & \textbf{Quantity} & \textbf{Total Cost} \\
+\hline
+EV3 Colour Sensor & £30.00 & 2 & £60.00 \\
+\hline
+Omni Wheels & £6.60 & 6 & £39.60 \\
+\hline
+MDF Panels & £6.00 & 6 & £36.00 \\
+\hline
+Hypothetical Server Cost & £15.00 & 1 & £15.00 \\ 
+\hline
+ &  & \textbf{Total} & £150.60 \\ 
+\hline
+ &  & \textbf{Balance} & £49.40 \\
+\hline
+\end{tabular}
+\caption{Finance}
+\end{table}
+
+
+\begin{table}[!htb]
+\centering
+\begin{tabular}{| p{2cm} | p{2cm} |}
+\hline
+\textbf{Battery (mAh)} & \textbf{Voltage} \\
+\hline
+2200 & 7.5V \\
+\hline
+\end{tabular}
+\caption{EV3 Battery and Voltage}
+\end{table}
+
+\begin{table}[!htb]
+\centering
+\begin{tabular}{| p{2.2cm} | p{2cm} | p{2.2cm} | p{2cm} | p{2cm} |}
+\hline
+\textbf{Component} & \textbf{Amperes (7.5V)} & \textbf{Number on Board} & \textbf{Total Amperes} & \textbf{Total mA}\\
+\hline
+Colour Sensor & 0.107 & 4 & 0.428 & 428 \\
+\hline
+Motor (Running at 100\%) & 0.186 & 5 & 0.930 & 930 \\
+\hline 
+Processor (Running at 100\%) & 0.098 & 1 & 0.098 & 98 \\
+\hline
+ & & & \textbf{Battery Time From Full Charge (Hours)} & 1.511 \\ 
+ \hline
+\end{tabular}
+\caption{Source https://www.dexterindustries.com/ev3-current-consumption-measurement/}
+\end{table}
+
+\begin{table}[!htb]
+\centering
+\begin{tabular}{| p{2cm} | p{2cm} | p{2cm} | p{2cm} | p{2cm} |}
+\hline
+\textbf{Weight (g)} & \textbf{Time (s)-Run 1} & \textbf{Time (s)-Run 2} & \textbf{Time (s)-Run 3} & \textbf{Time (s)-Run 4} \\
+\hline
+0 & 0.107 & 0 & 0 & 0 \\
+\hline
+50 & 0.186 & 0 & 0 & 0 \\
+\hline 
+80 & 0.098 & 0 & 0 & 0 \\
+ \hline
+\end{tabular}
+\caption{Source https://www.dexterindustries.com/ev3-current-consumption-measurement/}
+\end{table}
+
 \end{center}
   
 \end{document}
